@@ -1,9 +1,5 @@
 import requests
 import streamlit as st
-import time
-import json
-import boto3
-import os
 
 def predict(filename):
     API_URL = 'https://6sirzw2h54.execute-api.us-east-2.amazonaws.com/production/predict-pneumonia'
