@@ -1,7 +1,10 @@
 import requests
 import streamlit as st
+import codecs
 from streamlit.components.v1 import html
 from PIL import Image
+from bs4 import BeautifulSoup
+
 
 
 
@@ -21,6 +24,7 @@ if __name__ == "__main__":
 
     with open('style.css') as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
+    
 
     file = st.file_uploader("Upload an image")
 

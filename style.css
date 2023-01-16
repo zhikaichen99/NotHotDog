@@ -4,7 +4,7 @@ body{
 }
 
 nav {
-    
+
 }
 
 /* background */
@@ -14,9 +14,18 @@ nav {
 }
 
 /* top bar */
+.css-1avcm0n::before {
+    height: 10%;
+    color:#30D5C8;
+    content: "🌭 Not Hot Dog 🥸";
+    vertical-align: middle;
+    font-size: 35px;
+    padding-left: 8rem;
+}
+
 .css-1avcm0n {
     height: 6%;
-    background: white
+    background: white;
 }
 
 /* top bar button */
