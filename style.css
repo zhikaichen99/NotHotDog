@@ -1,0 +1,60 @@
+body{
+    font-family: "comic sans ms";
+    color: white;
+}
+
+/* background */
+.css-ffhzg2 {
+    background-image: url("https://images.unsplash.com/photo-1612392166886-ee8475b03af2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+    background-size: cover
+}
+
+/* header */
+.css-10trblm {
+    text-align: center;
+    color: white;
+    font-family: "comic sans ms";
+    font-size: 90%;
+}
+
+h1{
+    /* background-color: rgba(0,0,0, 0.20); */
+}
+
+/* Upload an image text */
+.css-k3w14i {
+    font-size: 20px;
+    
+}
+
+
+/* Upload an image body */
+.css-x8wxsk {
+    background-color: rgba(0,0,0, 0.20);
+}
+/* Upload button */
+.css-5uatcg{
+    background-color: rgba(0,0,0, 0.20);
+    
+}
+.css-noeb3a{
+    color: white;
+}
+
+img {
+    max-width: 50%;
+}
+
+/* columns */
+.css-keje6w{
+    background-color: rgba(0,0,0, 0.20);
+}
+
+.css-50ug3q {
+    font-size: 175%;
+    font-family: "comic sans ms";
+}
+
+.css-10trblm {
+    background-color: rgba(0,0,0, 0.20);
+}

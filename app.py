@@ -1,8 +1,12 @@
 import requests
 import streamlit as st
+from streamlit.components.v1 import html
+from PIL import Image
+
+
 
 def predict(filename):
-    API_URL = 'https://6sirzw2h54.execute-api.us-east-2.amazonaws.com/production/predict-pneumonia'
+    API_URL = "https://img.freepik.com/premium-vector/hotdog-pattern-background-food-vector-illustration_463676-5.jpg?w=1380"
     
     payload = filename
     headers = {
@@ -12,12 +16,23 @@ def predict(filename):
     return response.text
 
 
+
 if __name__ == "__main__":
-    st.title("Hot Dog Or Not Hot Dog")
+
+    with open('style.css') as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
+
+    st.title("🌭 HOT DOG OR NOT HOT DOG 🥸")
     file = st.file_uploader("Upload an image")
 
     if file is not None:
-        st.image(file)
+        col1, col2 = st.columns(2)
+        with st.container():
+            col1.image(file, use_column_width = None)
+            col2.metric("Hot Dog 🌭", 2, 4)
+            col2.metric("Not Hot Dog 🥸", 2, 4)
+        with st.container():
+            st.header("This is a hot dog 🌭")
         st.header(predict(file))
 
 
