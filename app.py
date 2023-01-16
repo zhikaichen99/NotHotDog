@@ -27,12 +27,10 @@ if __name__ == "__main__":
 
     if file is not None:
         col1, col2 = st.columns(2)
-        with st.container():
-            col1.image(file, use_column_width = None)
-            col2.metric("Hot Dog 🌭", 2, 4)
-            col2.metric("Not Hot Dog 🥸", 2, 4)
-        with st.container():
-            st.header("This is a hot dog 🌭")
+        col1.image(file, use_column_width = None)
+        col2.metric("Hot Dog 🌭", 2, 4)
+        col2.metric("Not Hot Dog 🥸", 2, 4)
+        col2.write("I don't know what that is 🥸. It's not a hot dog")
         st.header(predict(file))
 
 
