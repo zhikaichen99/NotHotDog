@@ -16,3 +16,8 @@ The Image Classifier was able to succesfully classify that the following image w
 
 And was able to successfully classify that the following image was not a hotdog:
 <img src = '/images/predicted_nothotdog.png'>
+
+<p float="left">
+  <img src='/images/predicted_hotdog.png' width="100" />
+  <img src='/images/predicted_nothotdog.png' width="100" /> 
+</p>
