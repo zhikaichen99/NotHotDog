@@ -27,18 +27,22 @@ if __name__ == "__main__":
     
 
     file = st.file_uploader("Upload an image")
-   
+    
+    
     if file is not None:
+        prediction = predict(file).strip('\"')
         col1, col2 = st.columns(2)
-        col1.image(file, use_column_width = None)
-        prediction = predict(file)
+        image = Image.open(file)
+        image = image.resize((1000,1000))
+        col1.image(image, use_column_width = None)
+        print(prediction)
         if prediction == "Hotdog":
             image = Image.open('./images/check_emoji.png')
             col2.image(image, use_column_width = None)
-            col2.write(prediction)
+            #st.write(prediction)
         else:
             image = Image.open('./images/x_emoji.png')
             col2.image(image, use_column_width = None)
-            col2.write(prediction)
+            #st.write(prediction)
 
 
