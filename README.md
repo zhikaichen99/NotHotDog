@@ -3,10 +3,8 @@ Inspired by the "Not Hot Dog" App developed by Jian Yang from the TV show "Silic
 
 
 
-<p float="left">
   <img src='/images/jian_yang_hbo_silicon_valley.jpeg' width="100" />
   <img src='/images/not_hot_dog_app.jpeg' width="100" /> 
-</p>
 
 
 ## Results
@@ -16,8 +14,3 @@ The Image Classifier was able to succesfully classify that the following image w
 
 And was able to successfully classify that the following image was not a hotdog:
 <img src = '/images/predicted_nothotdog.png'>
-
-<p float="left">
-  <img src='/images/predicted_hotdog.png'/>
-  <img src='/images/predicted_nothotdog.png'/> 
-</p>
